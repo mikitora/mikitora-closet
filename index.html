@@ -1,31 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>atelier mikitora - コーディネート</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>atelier mikitora</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #1c1c1c;
+      color: #fff;
+      background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
+    }
+    header {
+      background-color: #2a2a2a;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1rem;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #555;
+      padding-bottom: 0.5rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>atelier mikitora</h1>
-    <p>クローゼット</p>
   </header>
   <nav>
-    <ul>
-      <li><a href="index.html">ホーム</a></li>
-      <li><a href="coordinate.html">コーディネート</a></li>
-      <li><a href="items.html">アイテム紹介</a></li>
-      <li><a href="blog.html">ブログ</a></li>
-      <li><a href="shop.html">販売</a></li>
-      <li><a href="sns.html">SNS</a></li>
-      <li><a href="styleshot.html">スタイルショット</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="#">コーディネート</a>
+    <a href="#">アイテム紹介</a>
+    <a href="#">ブログ</a>
+    <a href="#">販売</a>
+    <a href="style-shots.html">スタイルショット</a>
+    <a href="#">SNS</a>
+    <a href="#">お問い合わせ</a>
   </nav>
-  <main>
-    <h2>コーディネート</h2>
-    <p>カミングスーン</p>
-  </main>
+  <div class="container">
+    <div class="section-title">最新のスタイル</div>
+    <div class="gallery">
+      <img src="outfit1.jpg" alt="Outfit 1" />
+      <img src="outfit2.jpg" alt="Outfit 2" />
+      <img src="outfit3.jpg" alt="Outfit 3" />
+    </div>
+  </div>
 </body>
 </html>
