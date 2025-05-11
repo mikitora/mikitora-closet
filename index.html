@@ -1,92 +1,140 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>atelier mikitora</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Mikitora</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #1c1c1c;
-      color: #fff;
-      background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
-    }
-    header {
-      background-color: #2a2a2a;
-      padding: 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      letter-spacing: 2px;
-    }
-    nav {
+      font-family: Arial, sans-serif;
       background-color: #333;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      color: #fff;
+      margin: 0;
+      padding: 0;
     }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #111;
+    }
+
+    header h1 {
+      font-size: 3em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #bbb;
+    }
+
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 15px 0;
+    }
+
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
-      padding: 0.8rem 1rem;
-      display: block;
+      padding: 10px 20px;
+      margin: 0 10px;
+      display: inline-block;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
     }
+
     nav a:hover {
-      background-color: #555;
+      background-color: #444;
     }
-    .container {
-      max-width: 900px;
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
       margin: auto;
-      padding: 1rem;
     }
-    .section-title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #555;
-      padding-bottom: 0.5rem;
+
+    section {
+      margin-bottom: 40px;
     }
+
+    footer {
+      text-align: center;
+      background-color: #111;
+      color: #888;
+      padding: 20px 0;
+      font-size: 0.9em;
+    }
+
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
+
     .gallery img {
-      width: 100%;
-      height: auto;
+      width: 30%;
+      margin-bottom: 20px;
       border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-    @media (max-width: 600px) {
+
+    /* モバイル対応 */
+    @media (max-width: 768px) {
+      .gallery img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
       nav {
-        flex-direction: column;
-        align-items: stretch;
+        font-size: 1em;
+      }
+
+      nav a {
+        padding: 8px 15px;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>atelier mikitora</h1>
+    <h1>Atelier Mikitora</h1>
+    <p>Fashion in Black, Concrete Style</p>
   </header>
+
   <nav>
-    <a href="index.html">Home</a>
-    <a href="style-shots.html">Style Shots</a>
+    <a href="#">Home</a>
     <a href="#">Outfit</a>
     <a href="#">Items</a>
+    <a href="style-shots.html">Style Shots</a> <!-- ここでスタイルショットのリンクを追加 -->
     <a href="#">Blog</a>
     <a href="#">Shop</a>
     <a href="#">SNS</a>
     <a href="#">Contact</a>
-</nav>
-  <div class="container">
-    <div class="section-title">最新のスタイル</div>
-    <div class="gallery">
-      <img src="outfit1.jpg" alt="Outfit 1" />
-      <img src="outfit2.jpg" alt="Outfit 2" />
-      <img src="outfit3.jpg" alt="Outfit 3" />
-    </div>
-  </div>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>
+        Welcome to Atelier Mikitora. Here, we showcase black-themed outfits and concrete-style fashion inspiration.
+      </p>
+    </section>
+
+    <section>
+      <h2>Latest Posts</h2>
+      <div class="gallery">
+        <img src="outfit1.jpg" alt="Outfit 1">
+        <img src="outfit2.jpg" alt="Outfit 2">
+        <img src="outfit3.jpg" alt="Outfit 3">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Atelier Mikitora. All rights reserved.
+  </footer>
+
 </body>
 </html>
