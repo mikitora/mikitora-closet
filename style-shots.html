@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Style Shots | Atelier Mikitora</title>
+  <title>Atelier Mikitora | Home</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -67,6 +67,37 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
+    .latest-posts {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .post {
+      width: 30%;
+      background-color: #444;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .post img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .post h3 {
+      margin: 0;
+      color: #fff;
+      font-size: 1.5em;
+    }
+
+    .post p {
+      font-size: 1em;
+      color: #bbb;
+    }
+
     footer {
       text-align: center;
       background-color: #111;
@@ -89,14 +120,23 @@
       nav a {
         padding: 8px 15px;
       }
+
+      .latest-posts {
+        flex-direction: column;
+      }
+
+      .post {
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Style Shots</h1>
-    <p>Fashion inspirations from Atelier Mikitora</p>
+    <h1>Atelier Mikitora</h1>
+    <p>Welcome to the world of fashion and style</p>
   </header>
 
   <nav>
@@ -119,6 +159,26 @@
         <img src="outfit3.jpg" alt="Outfit 3">
       </div>
     </section>
+
+    <!-- 最新記事セクション -->
+    <section class="latest-posts">
+      <div class="post">
+        <img src="outfit1.jpg" alt="Outfit 1">
+        <h3>Latest Outfit 1</h3>
+        <p>Description of the outfit, styling tips, etc.</p>
+      </div>
+      <div class="post">
+        <img src="outfit2.jpg" alt="Outfit 2">
+        <h3>Latest Outfit 2</h3>
+        <p>Description of the outfit, styling tips, etc.</p>
+      </div>
+      <div class="post">
+        <img src="outfit3.jpg" alt="Outfit 3">
+        <h3>Latest Outfit 3</h3>
+        <p>Description of the outfit, styling tips, etc.</p>
+      </div>
+    </section>
+
   </main>
 
   <footer>
