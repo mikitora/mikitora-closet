@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>みきとらのクローゼット</title>
+  <title>atelier mikitra</title>
   <style>
     body {
       margin: 0;
@@ -12,14 +12,12 @@
       color: #eee;
       background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
       background-size: cover;
-      line-height: 1.6;
     }
 
     header {
       background-color: rgba(0, 0, 0, 0.8);
       text-align: center;
       padding: 60px 20px;
-      margin-bottom: 20px;
     }
 
     header h1 {
@@ -34,17 +32,25 @@
 
     nav {
       background-color: #222;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 20px;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
     }
 
     nav a {
       color: #eee;
       text-decoration: none;
-      padding: 15px 20px;
-      display: block;
+      padding: 15px;
+      width: 100%;
+      text-align: center;
       transition: background 0.3s;
+      font-size: 1.1em;
     }
 
     nav a:hover {
@@ -52,6 +58,7 @@
     }
 
     main {
+      margin-left: 220px;
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
@@ -68,71 +75,41 @@
       padding: 20px;
       font-size: 0.9em;
     }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2em;
-      }
-
-      header p {
-        font-size: 1em;
-      }
-
-      nav a {
-        padding: 10px 15px;
-      }
-    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>みきとらのクローゼット</h1>
-    <p>ブラック基調 × モルタル感 × ファッションの記録</p>
+    <h1>atelier mikitra</h1>
+    <p>Closet</p>
   </header>
 
   <nav>
-    <a href="#">ホーム</a>
-    <a href="#">コーディネート</a>
-    <a href="#">アイテム紹介</a>
-    <a href="#">ブログ</a>
-    <a href="#">販売</a>
+    <a href="#">Home</a>
+    <a href="#">Coordinate</a>
+    <a href="#">Items</a>
+    <a href="#">Blog</a>
+    <a href="#">Shop</a>
     <a href="#">SNS</a>
-    <a href="#">お問い合わせ</a>
+    <a href="#">Contact</a>
   </nav>
 
   <main>
     <section>
-      <h2>ようこそ</h2>
+      <h2>Welcome</h2>
       <p>
-        「みきとらのクローゼット」では、ブラックを中心とした無機質なスタイルのコーディネート、アイテム紹介、ブログなどを掲載しています。
+        "atelier mikitra" is where fashion meets minimalism. Explore unique coordinates, items, and more.
       </p>
     </section>
 
     <section>
-      <h2>最新記事</h2>
-      <p>（ここに最新のブログやお知らせを追加できます）</p>
+      <h2>Latest Articles</h2>
+      <p>Here you can add your latest blog posts or news updates.</p>
     </section>
-
-<section id="coordinate">
-  <h2>コーディネート</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-    <div style="max-width: 300px;">
-      <img src="fashion1.jpg" alt="コーデ1" style="width: 100%; border-radius: 10px;">
-      <p style="text-align: center; margin-top: 10px;">ブラックジャケット × ワイドパンツ</p>
-    </div>
-    <div style="max-width: 300px;">
-      <img src="fashion2.jpg" alt="コーデ2" style="width: 100%; border-radius: 10px;">
-      <p style="text-align: center; margin-top: 10px;">モルタルグレーセットアップ</p>
-    </div>
-  </div>
-</section>
-
-    
   </main>
 
   <footer>
-    &copy; 2025 みきとらのクローゼット
+    &copy; 2025 atelier mikitra
   </footer>
 
 </body>
