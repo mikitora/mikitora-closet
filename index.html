@@ -25,16 +25,12 @@
       margin-bottom: 10px;
     }
 
-    header p {
-      font-size: 1.2em;
-      color: #bbb;
-    }
-
     nav {
       background-color: #222;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      padding: 10px 0;
     }
 
     nav a {
@@ -58,24 +54,6 @@
       justify-content: space-between;
     }
 
-    .left-nav {
-      width: 200px;
-      padding: 20px;
-      border-right: 2px solid #444;
-    }
-
-    .left-nav a {
-      display: block;
-      padding: 10px;
-      margin-bottom: 10px;
-      background-color: #333;
-      text-align: center;
-    }
-
-    .left-nav a:hover {
-      background-color: #555;
-    }
-
     .right-content {
       flex: 1;
       padding: 20px;
@@ -93,46 +71,49 @@
       padding: 20px;
       font-size: 0.9em;
     }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      nav a {
+        padding: 10px 15px;
+      }
+
+      main {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Atelier Mikitora</h1>
-    <p>ブラック基調 × モルタル感</p>
   </header>
 
   <nav>
     <a href="#">Home</a>
-    <a href="#">Outfit</a>
-    <a href="#">Items</a>
-    <a href="#">Blog</a>
-    <a href="#">Shop</a>
+    <a href="#">コーディネート</a>
+    <a href="#">アイテム紹介</a>
+    <a href="#">ブログ</a>
+    <a href="#">販売</a>
     <a href="#">SNS</a>
-    <a href="#">Contact</a>
+    <a href="#">お問い合わせ</a>
   </nav>
 
   <main>
-    <div class="left-nav">
-      <a href="#">Home</a>
-      <a href="#">Outfit</a>
-      <a href="#">Items</a>
-      <a href="#">Blog</a>
-      <a href="#">Shop</a>
-      <a href="#">SNS</a>
-      <a href="#">Contact</a>
-    </div>
-
     <div class="right-content">
       <section>
-        <h2>Welcome</h2>
+        <h2>ようこそ</h2>
         <p>
           「Atelier Mikitora」では、ブラックを中心とした無機質なスタイルのコーディネート、アイテム紹介、ブログなどを掲載しています。
         </p>
       </section>
 
       <section>
-        <h2>Outfit</h2>
+        <h2>コーディネート</h2>
         <div class="image-gallery">
           <img src="https://www.example.com/your-image.jpg" alt="Outfit Image">
           <!-- 他の画像も追加可能 -->
