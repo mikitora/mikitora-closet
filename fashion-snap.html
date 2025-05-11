@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>atelier mikitra</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #2c2c2c url('https://www.transparenttextures.com/patterns/concrete-wall.png');
+      color: #fff;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #333;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      flex: 1 0 33%;
+      text-align: center;
+      border-bottom: 1px solid #444;
+    }
+
+    @media (min-width: 600px) {
+      nav a {
+        flex: 0 0 auto;
+        border: none;
+      }
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 30%;
+      max-width: 200px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      background: #1e1e1e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>atelier mikitra</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="fashion-snap.html">FASHION SNAP</a>
+    <a href="items.html">Items</a>
+    <a href="blog.html">Blog</a>
+    <a href="shop.html">Shop</a>
+    <a href="sns.html">SNS</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>FASHION SNAP</h2>
+    <div class="gallery">
+      <img src="outfit1.jpg" alt="Outfit 1">
+      <img src="outfit2.jpg" alt="Outfit 2">
+      <img src="outfit3.jpg" alt="Outfit 3">
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 atelier mikitra
+  </footer>
+</body>
+</html>
