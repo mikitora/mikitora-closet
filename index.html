@@ -1,108 +1,90 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atelier Mikitora</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: "Helvetica Neue", "Noto Sans JP", sans-serif;
-      background-color: #111;
-      color: #eee;
-      background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
-      background-size: cover;
+      padding: 0;
+      background-color: #333;
+      color: #fff;
     }
 
     header {
-      background-color: rgba(0, 0, 0, 0.8);
       text-align: center;
-      padding: 60px 20px;
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2em;
-      color: #bbb;
-    }
-
-    nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: #eee;
-      text-decoration: none;
-      padding: 15px 20px;
-      display: block;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
+      padding: 20px;
       background-color: #444;
     }
 
-    main {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    footer {
-      background-color: #222;
-      color: #aaa;
-      text-align: center;
+    .latest-posts {
+      margin: 40px 0;
       padding: 20px;
-      font-size: 0.9em;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+    }
+
+    .latest-posts h2 {
+      text-align: center;
+      font-size: 2em;
+      color: #fff;
+    }
+
+    .post-gallery {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .post-item {
+      flex: 1;
+      background-color: #333;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .post-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .post-item p {
+      font-size: 1em;
+      color: #ddd;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Atelier Mikitora</h1>
-    <p>Fashion, Style, and More</p>
+    <p>Your closet, your style.</p>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="style-shots.html">Style Shots</a>
-    <a href="#">Outfit</a>
-    <a href="#">Items</a>
-    <a href="#">Blog</a>
-    <a href="shop.html">Shop</a>
-    <a href="sns.html">SNS</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>
-        Welcome to Atelier Mikitora, where you can explore stylish outfits, items, and more.
-      </p>
-    </section>
-
-    <section>
-      <h2>Latest Posts</h2>
-      <p>Check out the latest updates on the blog, products, and more here.</p>
-    </section>
-  </main>
+  <section class="latest-posts">
+    <h2>Latest Posts</h2>
+    <div class="post-gallery">
+      <div class="post-item">
+        <img src="outfit1.jpg" alt="Latest Outfit 1">
+        <p>New outfit collection - Spring vibes</p>
+      </div>
+      <div class="post-item">
+        <img src="outfit2.jpg" alt="Latest Outfit 2">
+        <p>Fresh look for the summer season</p>
+      </div>
+      <div class="post-item">
+        <img src="outfit3.jpg" alt="Latest Outfit 3">
+        <p>Trendy styles for all occasions</p>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 Atelier Mikitora
+    <p>&copy; 2025 Atelier Mikitora. All Rights Reserved.</p>
   </footer>
-
 </body>
 </html>
