@@ -1,130 +1,88 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atelier Mikitora</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>atelier mikitora</title>
   <style>
     body {
       margin: 0;
-      font-family: "Helvetica Neue", "Noto Sans JP", sans-serif;
-      background-color: #111;
-      color: #eee;
-      background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
-      background-size: cover;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
     }
-
     header {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: #333;
+      color: white;
+      padding: 1em;
       text-align: center;
-      padding: 60px 20px;
     }
-
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
     nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 10px 0;
+      background-color: #f4f4f4;
+      padding: 1em;
     }
-
-    nav a {
-      color: #eee;
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0.5em 0;
+    }
+    nav ul li a {
       text-decoration: none;
-      padding: 15px 20px;
-      display: block;
-      transition: background 0.3s;
+      color: #333;
     }
-
-    nav a:hover {
-      background-color: #444;
-    }
-
     main {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+      padding: 1em;
+    }
+    .gallery {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      gap: 1em;
     }
-
-    .right-content {
-      flex: 1;
-      padding: 20px;
+    .gallery img {
+      max-width: 100%;
+      height: auto;
     }
-
-    .image-gallery img {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      background-color: #222;
-      color: #aaa;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2em;
+    @media (min-width: 600px) {
+      body {
+        flex-direction: row;
       }
-
-      nav a {
-        padding: 10px 15px;
+      nav {
+        width: 200px;
+        height: 100vh;
+        position: fixed;
       }
-
       main {
-        flex-direction: column;
+        margin-left: 200px;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Atelier Mikitora</h1>
+    <h1>atelier mikitora</h1>
+    <p>クローゼット</p>
   </header>
-
   <nav>
-    <a href="#">Home</a>
-    <a href="#">コーディネート</a>
-    <a href="#">アイテム紹介</a>
-    <a href="#">ブログ</a>
-    <a href="#">販売</a>
-    <a href="#">SNS</a>
-    <a href="#">お問い合わせ</a>
+    <ul>
+      <li><a href="#">ホーム</a></li>
+      <li><a href="#">コーディネート</a></li>
+      <li><a href="#">アイテム紹介</a></li>
+      <li><a href="#">ブログ</a></li>
+      <li><a href="#">販売</a></li>
+      <li><a href="#">SNS</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
   </nav>
-
   <main>
-    <div class="right-content">
-      <section>
-        <h2>ようこそ</h2>
-        <p>
-          「Atelier Mikitora」では、ブラックを中心とした無機質なスタイルのコーディネート、アイテム紹介、ブログなどを掲載しています。
-        </p>
-      </section>
-
-      <section>
-        <h2>コーディネート</h2>
-        <div class="image-gallery">
-          <img src="https://www.example.com/your-image.jpg" alt="Outfit Image">
-          <!-- 他の画像も追加可能 -->
-        </div>
-      </section>
-    </div>
+    <h2>ようこそ</h2>
+    <p>最新記事</p>
+    <section class="gallery">
+      <img src="outfit1.jpg" alt="Outfit 1">
+      <img src="outfit2.jpg" alt="Outfit 2">
+      <img src="outfit3.jpg" alt="Outfit 3">
+    </section>
   </main>
-
-  <footer>
-    &copy; 2025 Atelier Mikitora
-  </footer>
-
 </body>
 </html>
