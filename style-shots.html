@@ -1,49 +1,94 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Style Shots | みきとらのクローゼット</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Shots | Atelier Mikitora</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #111;
-      color: #eee;
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: #fff;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 20px;
       text-align: center;
+      padding: 50px 20px;
+      background-color: #111;
     }
 
     header h1 {
-      font-size: 2.5em;
+      font-size: 3em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #bbb;
+    }
+
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    nav a {
       color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      display: inline-block;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
     }
 
-    .image-gallery {
+    nav a:hover {
+      background-color: #444;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
-      gap: 20px;
-      padding: 20px;
     }
 
-    .image-gallery img {
-      width: 300px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    .gallery img {
+      width: 30%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     footer {
-      background-color: #222;
       text-align: center;
-      color: #aaa;
-      padding: 10px;
+      background-color: #111;
+      color: #888;
+      padding: 20px 0;
+      font-size: 0.9em;
+    }
+
+    /* モバイル対応 */
+    @media (max-width: 768px) {
+      .gallery img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        font-size: 1em;
+      }
+
+      nav a {
+        padding: 8px 15px;
+      }
     }
   </style>
 </head>
@@ -51,16 +96,33 @@
 
   <header>
     <h1>Style Shots</h1>
+    <p>Fashion inspirations from Atelier Mikitora</p>
   </header>
 
-  <div class="image-gallery">
-    <img src="https://github.com/mikitora/mikitora-closet/raw/main/outfit1.jpg" alt="Outfit 1" />
-    <img src="https://github.com/mikitora/mikitora-closet/raw/main/outfit2.jpg" alt="Outfit 2" />
-    <img src="https://github.com/mikitora/mikitora-closet/raw/main/outfit3.jpg" alt="Outfit 3" />
-  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="style-shots.html">Style Shots</a>
+    <a href="#">Outfit</a>
+    <a href="#">Items</a>
+    <a href="#">Blog</a>
+    <a href="#">Shop</a>
+    <a href="#">SNS</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Our Style Shots</h2>
+      <div class="gallery">
+        <img src="outfit1.jpg" alt="Outfit 1">
+        <img src="outfit2.jpg" alt="Outfit 2">
+        <img src="outfit3.jpg" alt="Outfit 3">
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 みきとらのクローゼット
+    &copy; 2025 Atelier Mikitora. All rights reserved.
   </footer>
 
 </body>
