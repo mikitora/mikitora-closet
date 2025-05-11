@@ -97,6 +97,21 @@
         margin-left: 0;
       }
     }
+
+    /* 画像のスタイル */
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body>
@@ -122,6 +137,16 @@
       <p>
         "atelier mikitra" is where fashion meets minimalism. Explore unique coordinates, items, and more.
       </p>
+    </section>
+
+    <section>
+      <h2>Coordinate</h2>
+      <p>Here are some of my recent outfits!</p>
+      <div class="image-container">
+        <img src="https://github.com/mikitora/mikitora-closet/raw/main/outfit1.jpg" alt="Outfit 1">
+        <img src="https://github.com/mikitora/mikitora-closet/raw/main/outfit2.jpg" alt="Outfit 2">
+        <img src="https://github.com/mikitora/mikitora-closet/raw/main/outfit3.jpg" alt="Outfit 3">
+      </div>
     </section>
 
     <section>
