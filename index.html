@@ -2,78 +2,74 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>atelier mikitra</title>
   <style>
     body {
       margin: 0;
       font-family: 'Helvetica Neue', sans-serif;
-      background-color: #2f2f2f;
-      background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
-      background-size: cover;
-      color: #f0f0f0;
+      background: #2c2c2c url('https://www.transparenttextures.com/patterns/concrete-wall.png');
+      color: #fff;
     }
 
     header {
-      background-color: #1c1c1c;
-      text-align: center;
+      background-color: #1e1e1e;
       padding: 1rem;
+      text-align: center;
     }
 
     header h1 {
       margin: 0;
       font-size: 2rem;
+      color: #fff;
     }
 
     nav {
-      background-color: #2b2b2b;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 0.5rem;
+      background-color: #333;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0.5rem;
+      padding: 1rem;
+      flex: 1 0 33%;
+      text-align: center;
+      border-bottom: 1px solid #444;
+    }
+
+    @media (min-width: 600px) {
+      nav a {
+        flex: 0 0 auto;
+        border: none;
+      }
     }
 
     main {
-      padding: 1rem;
+      padding: 2rem;
+      text-align: center;
     }
 
-    section {
-      margin-bottom: 2rem;
-    }
-
-    .grid {
+    .latest {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       justify-content: center;
     }
 
-    .grid img {
+    .latest img {
       width: 30%;
       max-width: 200px;
-      border-radius: 8px;
+      border-radius: 10px;
     }
 
-    .coming-soon {
+    footer {
       text-align: center;
-      font-size: 1.2rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-
-      .grid img {
-        width: 80%;
-      }
+      padding: 1rem;
+      font-size: 0.8rem;
+      background: #1e1e1e;
     }
   </style>
 </head>
@@ -83,60 +79,26 @@
   </header>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#outfit">Outfit</a>
-    <a href="#items">Items</a>
-    <a href="#blog">Blog</a>
-    <a href="#shop">Shop</a>
-    <a href="#sns">SNS</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="fashion-snap.html">FASHION SNAP</a>
+    <a href="items.html">Items</a>
+    <a href="blog.html">Blog</a>
+    <a href="shop.html">Shop</a>
+    <a href="sns.html">SNS</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <main>
-    <section id="home">
-      <h2>最新情報</h2>
-      <div class="grid">
-        <img src="outfit1.jpg" alt="Outfit 1" />
-        <img src="outfit2.jpg" alt="Outfit 2" />
-        <img src="outfit3.jpg" alt="Outfit 3" />
-      </div>
-    </section>
-
-    <section id="outfit">
-      <h2>コーディネート</h2>
-      <div class="grid">
-        <img src="outfit1.jpg" alt="Outfit 1" />
-        <img src="outfit2.jpg" alt="Outfit 2" />
-        <img src="outfit3.jpg" alt="Outfit 3" />
-      </div>
-    </section>
-
-    <section id="items">
-      <h2>Items</h2>
-      <p class="coming-soon">Coming Soon...</p>
-    </section>
-
-    <section id="blog">
-      <h2>Blog</h2>
-      <p class="coming-soon">Coming Soon...</p>
-    </section>
-
-    <section id="shop">
-      <h2>Shop</h2>
-      <p class="coming-soon">Coming Soon...</p>
-    </section>
-
-    <section id="sns">
-      <h2>SNS</h2>
-      <p class="coming-soon">
-        <a href="https://www.instagram.com/mikitora03" target="_blank" style="color:#f0f0f0;">Tap to Page - @mikitora03</a>
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p class="coming-soon">Coming Soon...</p>
-    </section>
+    <h2>Latest Posts</h2>
+    <div class="latest">
+      <img src="outfit1.jpg" alt="Outfit 1">
+      <img src="outfit2.jpg" alt="Outfit 2">
+      <img src="outfit3.jpg" alt="Outfit 3">
+    </div>
   </main>
+
+  <footer>
+    &copy; 2025 atelier mikitra
+  </footer>
 </body>
 </html>
